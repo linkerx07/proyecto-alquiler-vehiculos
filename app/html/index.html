@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Alquiler de Autos</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel='stylesheet' href='/style.css' />
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link active" href="#"><i class="fas fa-home"></i> Inicio</a>
+                <a class="nav-item nav-link" onclick="miCuenta()">Mi Cuenta</a>
+                <a class="nav-item nav-link" onclick="getAlquiler()">Consultar Alquiler</a>
+
+
+            </div>
+        </nav>
+
+
+        <div class="p-3 m-3">
+            <div class="alert alert-warning" role="alert">
+                <strong>Al reservar puede pasar a retirar el vehiculo en nuestra sucursal, haciendo el pago respectivo con tarjeta o transferencia bancaria.</strong>
+            </div>
+            <h3><i id="icon" class=""></i><b id="titlePage"></b></h3>
+            <div class="row " id="Vistas"></div>
+
+        </div>
+
+
+    </div>
+
+    <!-- <button onclick="onVehiculos()">prueba</button> -->
+
+    <footer>
+        <p>Alquiler de Vehiculos - Prueba API Rest + Web. Yassir Amores 2020</p>
+    </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/vehiculos.js"></script>
+    <script src="/users.js"></script>
+
+
+    <!-- JavaScript -->
+    <script src="/alertify.min.js"></script>
+    <script src="/moment.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
